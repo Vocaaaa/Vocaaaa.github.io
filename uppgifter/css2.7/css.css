@@ -1,0 +1,29 @@
+.div1 {
+    background-color: black;
+    color: white;
+    margin-bottom: 1%;
+}
+.div2 {
+    background-color: gray;
+    color: white;
+    width: 50%;
+    margin-bottom: 1%;
+}
+.div3 {
+    background-color: dimgray;
+    color: black;
+    width: 25%;
+    margin-bottom: 1%;
+}
+.div4 {
+    background-color:red ;
+    color: white;
+    width: 500px;
+    margin-bottom: 1%;
+}
+.div5 {
+    background-color: blue;
+    color: white;
+    width: 250px;
+    margin-bottom: 1%;
+}

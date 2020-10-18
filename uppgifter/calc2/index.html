@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script async="" src="/lib/tagmng3.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="/lib/rapidz.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/lib/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" href="/lib/favicon/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/lib/favicon/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/lib/favicon/manifest.json">
+        <link rel="mask-icon" href="/lib/favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/lib/favicon/favicon.ico">
+        <meta name="msapplication-config" content="/lib/favicon/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="format-detection" content="telephone=no">
+        <!-- #BeginEditable "doctitle" -->
+        <title>Kilowatts to horsepower (hp) conversion calculator</title>
+        <meta name="description" content="Kilowatts (kW) to horsepower (hp) power conversion: calculator and how to convert.">
+        <style>
+        
+        
+            .calc2 { padding:15px }
+            /*.calc2 tr td:nth-child(2) { width:calc(100% - 30px); }*/
+            .calc2 input[type=text], .calc2 input[type=number] { padding:5px; }
+            .calc2 button { padding:8px 4px; margin:10px auto; }
+            @media all and (max-width: 600px) {
+                .calc2 { width:100%; }
+            }
+        </style>
+        <!-- #EndEditable -->
+        
+        <script data-dapp-detection="">
+        (function() {
+          let alreadyInsertedMetaTag = false
+        
+          function __insertDappDetected() {
+            if (!alreadyInsertedMetaTag) {
+              const meta = document.createElement('meta')
+              meta.name = 'dapp-detected'
+              document.head.appendChild(meta)
+              alreadyInsertedMetaTag = true
+            }
+          }
+        
+          if (window.hasOwnProperty('web3')) {
+            // Note a closure can't be used for this var because some sites like
+            // www.wnyc.org do a second script execution via eval for some reason.
+            window.__disableDappDetectionInsertion = true
+            // Likely oldWeb3 is undefined and it has a property only because
+            // we defined it. Some sites like wnyc.org are evaling all scripts
+            // that exist again, so this is protection against multiple calls.
+            if (window.web3 === undefined) {
+              return
+            }
+            __insertDappDetected()
+          } else {
+            var oldWeb3 = window.web3
+            Object.defineProperty(window, 'web3', {
+              configurable: true,
+              set: function (val) {
+                if (!window.__disableDappDetectionInsertion)
+                  __insertDappDetected()
+                oldWeb3 = val
+              },
+              get: function () {
+                if (!window.__disableDappDetectionInsertion)
+                  __insertDappDetected()
+                return oldWeb3
+              }
+            })
+          }
+        })()</script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=UA-2665076-2"></script><script type="text/javascript" async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        </head>
+        <body>
+
+            <div id="header">
+                <div>
+                <div id="logo" class="box">
+                   
+                </div>
+                </div>
+            </div>
+            
+            <div id="wrapper">
+            
+            <div id="nav">
+                <!-- #BeginEditable "doclink" -->
+    
+                <!-- #EndEditable -->
+            </div>
+            
+            <div id="top-ad">
+                <!-- RT above responsive -->
+                <ins class="adsbygoogle adslot_1" data-ad-client="ca-pub-5335356106950684" data-ad-slot="6506963100"></ins>
+            </div>
+                
+            <div id="lcol">
+            
+                <div id="doc">
+                <!-- #BeginEditable "doctext" -->
+                <h1 style="font-family: Arial, Helvetica, sans-serif;"> Kilowatts to horsepower conversion</h1>
+                <p style="font-family: Arial, Helvetica, sans-serif;"> <a href="https://en.wikipedia.org/wiki/Kilowatt-hour">Kilowatts (kW)</a> to horsepower (hp) 
+                <a href="https://en.wikipedia.org/wiki/Engine_power">power</a> conversion calculator</p>
+                <!--
+                <ul>
+                    <li><a href="#calculator">kW to hp conversion calculator</a></li>
+                    <li><a href="#how">How to convert kW to hp</a></li>
+                    <li><a href="#table">kW to hp conversion table</a></li>
+                </ul>
+                <h2><a name="calculator"></a>Kilowatts to horsepower conversion calculator</h2>
+                -->
+                <p style="font-family: Arial, Helvetica, sans-serif;"> Enter the <a href="/electric/electric_power.html">power</a> in <a href="/electric/kW.html">kilowatts</a> and press the <i>Convert</i> button:</p>
+            
+                <form name="calcform" autocomplete="off">
+                <table class="calc2">
+                  <tbody>
+                  <tr>
+                    <td style="font-family: Arial, Helvetica, sans-serif;"><label for="x">Enter kilowatts:</label></td>
+                    <td class="math"><input type="number" min="0" step="any" id="x" name="x" class="intext" autofocus="" tabindex="1"></td>
+                    <td style="font-family: Arial, Helvetica, sans-serif;" class="mathsymbol">kW</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                      <td colspan="2">
+                        <button type="button" id="calc" title="Convert" class="btn" tabindex="3" onclick="calca()"><img src="/lib/icons/glyphicons_all/glyphicons_halflings/glyphicons_halflings_030_refresh.png" alt=""> Convert</button>
+                        <button type="reset" id="reset" title="Reset" class="btn" tabindex="4" onclick="setfocus()"><img src="/lib/icons/glyphicons_all/glyphicons_halflings/glyphicons_halflings_013_remove.png" alt=""> Reset</button>
+                        <button type="button" title="Swap conversion" class="btn" tabindex="5" onclick="location.href='hp-to-kw.html';"><img src="/lib/icons/glyphicons_all/glyphicons_halflings/glyphicons_halflings_114_retweet.png" alt=""> Swap</button>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td>Result in mechanical horsepower:</td>
+                    <td class="math"><input type="text" name="y1" class="outtext" readonly="" tabindex="6"></td>
+                    <td class="mathsymbol">hp<sub>(I)</sub></td>
+                  </tr>
+                  <tr>
+                    <td>Result in electrical horsepower:</td>
+                    <td class="math"><input type="text" name="y2" class="outtext" readonly="" tabindex="7"></td>
+                    <td class="mathsymbol">hp<sub>(E)</sub></td>
+                  </tr>
+                  <tr>
+                    <td>Result in metric horsepower:</td>
+                    <td class="math"><input type="text" name="y3" class="outtext" readonly="" tabindex="8"></td>
+                    <td class="mathsymbol">hp<sub>(M)</sub></td>
+                  </tr>
+                  </tbody>
+                </table>
+                </form>			
+            
+                <p>* Electrical horsepower is used for electric engines and air conditioners</p>
+                    <p><a href="hp-to-kw.html">Hp to kW conversion ►</a></p>
+                <h2><a name="how"></a>How to convert kilowatts to horsepower</h2>
+                <h4>Kilowatts to mechanic / hydraulic horsepower</h4>
+                <p>One mechanic or hydraulic horsepower is equal to 0.745699872 kilowatts:</p>
+                <p class="math">1 hp(I) = 745.699872 W = 0.745699872 kW</p>
+                <p>So the power conversion of kilowatts to horsepower is given by:</p>
+                <p class="math"><i>P</i><sub>(hp)</sub> = <i>P</i><sub>(kW)</sub> / 0.745699872</p>
+                <h5>Example</h5>
+                <p>Convert 10kW to mechanic horsepower:</p>
+                <p class="math"><i>P</i><sub>(hp)</sub> = 10kW / 0.745699872 = 13.41 hp</p>
+                <p>&nbsp;</p>
+                <h4>Kilowatts to electrical horsepower</h4>
+                <p>One electrical horsepower is equal to 0.746 kilowatts:</p>
+                <p class="math">1 hp(E) = 746 W = 0.746 kW</p>
+                <p>So the power conversion of kilowatts to horsepower is given by:</p>
+                <p class="math"><i>P</i><sub>(hp)</sub> = <i>P</i><sub>(kW)</sub> / 0.746</p>
+                <h5>Example</h5>
+                <p>Convert 10kW to electrical horsepower:</p>
+                <p class="math"><i>P</i><sub>(hp)</sub> = 10kW / 0.746 = 13.405 hp</p>
+                <p>&nbsp;</p>
+                <h4>Kilowatts to metric horsepower</h4>
+                <p>One metric horsepower is equal to 0.73549875 kilowatts:</p>
+                <p class="math">1 hp(M) = 735.49875 W = 0.73549875 kW</p>
+                <p>So the power conversion of kilowatts to horsepower is given by:</p>
+                <p class="math"><i>P</i><sub>(hp)</sub> = <i>P</i><sub>(kW)</sub> / 0.73549875</p>
+                <h5>Example</h5>
+                <p>Convert 10kW to metric horsepower:</p>
+                <p class="math"><i>P</i><sub>(hp)</sub> = 10kW / 0.73549875 = 13.596 hp</p>
+                <h2><a name="table"></a>Kilowatts to horsepower conversion table</h2>
+                <table class="ntable">  
+                <p>&nbsp;</p>
+                <p><a href="hp-to-kw.html">Hp to kW conversion ►</a></p>
+                <p>&nbsp;</p>
+                <hr>
+                <h2>See also</h2>
+                <ul>
+                    <li><a href="how-kw-to-hp.html">kW to hp calculation</a></li>
+                    <li><a href="hp-to-kw.html">Hp to kW conversion</a></li>
+                    <li><a href="kw-to-bhp.html">kW to BHP conversion</a></li>
+                    <li><a href="hp-to-watt.html">Hp to watts conversion</a></li>
+                    <li><a href="watt-to-hp.html">Watts to hp conversion</a></li>
+                    <li><a href="../../electric/kW.html">Kilowatts (kW)</a></li>
+                    <li><a href="../../electric/watt.html">Watt (W)</a></li>
+                    <li><a href="../../electric/dBm.html">dBm</a></li>
+                    <li><a href="../../electric/electric_power.html">Electric power</a></li>
+                    <li><a href="index.html">Power conversion</a></li>
+                </ul>
+            
+                <script src="../convert.js"></script>
+                <script>
+                    function calca()
+                    {
+                        x = document.calcform.x.value;
+                        y1 = x/0.745699872;
+                        y2 = x/0.746;
+                        y3 = x/0.73549875;
+                         y1 = roundresult(y1);
+                         y2 = roundresult(y2);
+                         y3 = roundresult(y3);
+                         document.calcform.y1.value = y1;
+                         document.calcform.y2.value = y2;
+                         document.calcform.y3.value = y3;
+                    }
+                </script>
+            
+                <!-- #EndEditable -->
+            
+                <div id="share">
+                    <a id="sharefb" href="https://www.facebook.com/oliver.henriksson.7564" title="Facebook" target="_blank"><img src="/lib/icons/glyphicons_all/social/png/glyphicons-social-31-facebook@2x.png" alt="Facebook"></a>
+                    <a id="sharetw" href="https://twitter.com/awokehgg" title="Twitter" target="_blank"><img src="/lib/icons/glyphicons_all/social/png/glyphicons-social-32-twitter@2x.png" alt="Twitter"></a>
+                
+                    <a id="shareml" href="mailto:?to=&amp;subject=Kilowatts%20to%20horsepower%20(hp)%20conversion%20calculator&amp;body=https%3A%2F%2Fwww.rapidtables.com%2Fconvert%2Fpower%2Fkw-to-hp.html" title="Email"><img src="/lib/icons/glyphicons_all/social/png/glyphicons-social-14-e-mail-envelope@2x.png" alt="Email"></a>
+                </div>
+            
+                <div id="ban-ad">
+                    <ins class="adsbygoogle adslot_3" data-ad-client="ca-pub-5335356106950684" data-ad-slot="3065550301"></ins>
+                </div>
+                
+                <!-- #BeginEditable "doctext2" -->
+                <!-- #EndEditable -->
+                </div>
+                
+               <div id="fdbk">
+                  <h2><a id="feedback"></a>Write how to improve this page</h2>
+                  <form id="fdbkform">
+                  <textarea id="fdbkarea" rows="4" minlength="30" maxlength="1000" placeholder="Your message ..." required="" class="form-control"></textarea>
+                  <span id="fdbkmsg"></span>
+                  <button type="submit" class="btn btn-secondary" onclick="OnSubFb()">Submit Feedback</button>
+                  </form>
+               </div>
+            </div>
+            
+            <div id="rcol">	
+                <!-- RT aside responsive -->
+                <ins class="adsbygoogle adslot_2" data-ad-client="ca-pub-5335356106950684" data-ad-slot="2437938306"></ins>
+            
+                <!-- #BeginEditable "docnav" -->
+                </ul>
+                <p>&nbsp;</p>
+                <!-- #EndEditable -->
+                
+            </div>
+            
+            </div>
+            
+            <div id="footer">
+                <a href="/index.html">Home</a> | 
+                <a href="/web/index.html">Web</a> |
+                <a href="/math/index.html">Math</a> | 
+                <a href="/electric/index.html">Electricity</a> |
+                <a href="/calc/index.html">Calculators</a> | 
+                <a href="/convert/index.html">Converters</a> |
+                <a href="/tools/index.html">Tools</a>
+                <p>©  
+                <a href="/">RapidTables.com</a> | 
+                <a href="/about/about.html" rel="nofollow">About</a> | 
+                <a href="/about/terms.html" rel="nofollow">Terms of Use</a> | 
+                <a href="/about/privacy.html" rel="nofollow">Privacy Policy</a> | 
+                <a href="/about/cookies.html" rel="nofollow">Manage Cookies</a>
+                </p>
+            </div>
+            
+            <div id="banner" style="display: block;">
+               <div>
+                  This website uses cookies to improve your experience, analyze traffic and display ads.
+                  <a href="https://www.rapidtables.com/about/privacy.html">Learn more</a>
+               </div>
+               <div>
+                  <a id="banokbtn">OK</a>
+                  <a id="bansetbtn" href="/about/cookies.html">Manage Settings</a>
+               </div>
+            </div>
+            
+            <!-- #BeginEditable "docscript" -->
+            <!-- #EndEditable -->
+            
+            
+            
+            <!-- #EndTemplate -->
+            
+            
+            </body>
+</html>

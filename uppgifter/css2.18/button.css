@@ -1,0 +1,50 @@
+.button {
+    border-radius: 5px;
+    color: black;
+    border: 1px solid black;
+    padding: 0.3%;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.button:hover {
+    color: white;
+    background-color: black;
+    transition-duration: 0.5s;
+    font-family: sans-serif;
+
+}
+.button.--red {
+    color: red;
+    border: 1px solid red
+
+}
+.button.--red:hover {
+    text-decoration: none;
+    background-color: red;
+    border: red solid 1px;
+    transition-duration: 0.5s;
+    color: white
+}
+.button.--green {
+    color: green;
+    border: green 1px solid;
+}
+.button.--green:hover {
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    transition-duration: 0,5s;
+    border: green solid 1px;
+}
+.button.--blue {
+    color: blue;
+    border: blue solid 1px;
+}
+.button.--blue:hover {
+    text-decoration: none;
+    background-color: blue;
+    border: blue solid 1px;
+    transition-duration: 0.5s;
+    color: white;
+}

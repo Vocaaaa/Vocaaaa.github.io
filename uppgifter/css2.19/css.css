@@ -1,0 +1,22 @@
+.parent {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.circle {
+
+    justify-content: center;
+    align-items: center;
+    border-radius: 400px;
+    background-color: white;
+    background-image: url(cow.jpg);
+    width: 250px;
+    height: 250px;
+    background-position: center;
+    border: 30px solid white;
+    background-size: 300px;
+    box-shadow: inset 3px 3px gray;
+}

@@ -29,18 +29,18 @@
     justify-content: center;
 }
 h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 h3 {
-    color: royalblue;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: lightgray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: small;
-    margin-top: -10px;
+    margin-top: -5%;
 }
 hr {
     width: 50px;
 }
 p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: small;
 }

@@ -1,0 +1,81 @@
+.parent {
+    width: 100%;
+    height: 100vh;
+}
+h1 {
+    font-family: sans-serif;
+    margin-top: 3%;
+}
+
+h3 {
+    font-family: sans-serif;
+    font-size: xx-large;
+    margin-top: -6%;
+}
+body {
+    margin: 0px;
+    margin-left: 0px;
+}
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+}
+.pic {
+    background-image: url(glorious.jpg);
+    width: 790px;
+    height: 423px;
+}
+.toptext {
+    margin-left: 55%;
+    margin-top: -25%;
+    font-family: sans-serif;
+    font-size: x-large;
+}
+p {
+    margin-left: 55%;
+    font-family: sans-serif;
+}
+.line {
+    margin-left: 55%;
+    margin-right: 35%;
+}
+.textright {
+    margin-left: 45%;
+    margin-top: -18.5%;
+    font-size: x-large;
+}
+.line2 {
+    margin-top: -1.3%;
+    margin-right: 23%;
+    margin-left: 54.5%;
+}
+.righttext {
+    font-size: 17.5px;
+}
+.myButton {
+	box-shadow: 1px 1px 6px 0px black;
+	background-color:#e31c1c;
+	border-radius:28px;
+	border:1px solid black;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:17px;
+	font-weight:bold;
+	padding:7.5px 14px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #0a000a;
+}
+.myButton:hover {
+	background-color:red;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+a {
+    margin-left: 18%;
+    margin-top: 5%;
+}

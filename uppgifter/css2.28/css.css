@@ -1,0 +1,33 @@
+@media screen and (min-width: 900px) {
+    .text1 {
+        display: unset;
+    }
+    .text2 {
+        display: none;
+    }
+    .text3 {
+        display: none;
+    }
+}
+@media screen and (max-width: 900x) {
+    .text2 {
+        display: unset;
+    }
+    .text1 {
+        display: none;
+    }
+    .text3 {
+        display: none;
+    }
+}
+@media screen and (max-width: 499px) {
+    .text3 {
+        display: unset;
+    }
+    .text1 {
+        display: none;
+    }
+    .text2 {
+        display: none;
+    }
+}

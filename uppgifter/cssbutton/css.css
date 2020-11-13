@@ -39,3 +39,9 @@ button.button2 {
 button:visited {
     background-color: white;
 }
+embed {
+    opacity: 0%;
+}
+audio {
+    opacity: 0%;
+}

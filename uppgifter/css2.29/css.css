@@ -30,5 +30,6 @@ h1 {
 }
 p {
     font-family: sans-serif;
+    border: black solid 2px;
 
 }

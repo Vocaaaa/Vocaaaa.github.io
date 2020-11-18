@@ -1,0 +1,67 @@
+body {
+    margin: 0%;
+    background-color: rgb(29, 29, 29);
+}
+.parent {
+    width: 100%;
+    height: 100vh;
+    
+}
+img {
+    margin-left: 28%;
+    margin-top: -8%;
+    width: 600px;
+    height: 600px;
+}
+img.logo {
+    
+    width: 400px;
+    height: 400px;
+    margin-left: -48%;
+}
+h1 {
+    margin-left: 41.5%;
+    margin-top: -15%;
+    font-family: "Open Sans Condensed",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: xx-large;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+a {
+    width: 100px;
+    height: 100px;
+}
+p.text {
+    color: white;
+    font-family: "Open Sans Condensed",sans-serif;
+    font-size: x-large;
+    text-shadow: 2px 2px black;
+
+}
+img.osu {
+    width: 475px;
+    height: 300px;
+    object-fit: fill;
+    margin-top: 0.5%;
+    margin-left: 1%;
+    
+}
+h3 {
+    font-family: "Open Sans Condensed",sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    color: white;
+    margin-left: 33%;
+    margin-top: -17%;
+    text-shadow: 2px 2px black;
+}
+img.toppp {
+    margin-left: 67%;
+    margin-top: -13%;
+    width: 450px;
+    height: 350px;
+    object-fit: fill;
+}

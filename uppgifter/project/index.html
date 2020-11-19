@@ -8,19 +8,71 @@
 </head>
 <body>
     <div class="parent">
-    <img src="yess.png" alt="">
-    <h1>ABOUT VOCA</h1>
-    <p class="text"> Professional osu! & CSGO player</p>
-    <img class="osu" src="osu.png" alt="">
-    <h3>On osu! he has achived rank #430k in 2 months of playing <br>
-        which is really bad and he struggles to hit 50pp plays. <br>
-        His accuracy is the only okay part about his profile coming in <br>
-        at 91.29%. He sucks at holding combo which you can see at <br>
-        his profile with the maximum combo only being 636. <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        To the right you can see his top plays ➜
-    </h3>
-    <img class="toppp" src="osu2.png" alt="">
-</div>
+          <div class="tab">
+            <button type= autostart class="tablinks" onclick="openCity(event, 'Tokyo2')">Home</button>
+            <button class="tablinks" onclick="openCity(event, 'London')">About</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">osu!</button>
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">CSGO</button>
+          </div>
+          
+        <div id="Tokyo2" class="tabcontent">
+            
+        </div>
+          <div id="London" class="tabcontent">
+              
+
+            <h3 class="aabout"> ABOUT VOCA</h3>
+            <p class="text"> Voca is a 15 year old student from Finland and a professional osu! and CSGO player.</p>
+          </div>
+          
+          <div id="Paris" class="tabcontent">
+            <h2 class="career">His osu! career</h2>
+            <img class="osu" src="osu.PNG" alt="">
+            <h3 class="textt"> His osu! career started on 13 september 2020 and in <br>
+                2 months of playing he achived rank #430k <br>
+                which is really bad and he struggles to hit 50pp plays. <br>
+                His accuracy is the only okay part about his profile coming in <br>
+                at 91.29%. He sucks at holding combo which you can see at <br>
+                his profile with the maximum combo only being 636. <br>
+                His total play count is 4,600 and he has hit 510k circles in the<br>
+                time he has played. His favorite song is BASS SLUT mapped by <br>
+                the one and only Fatfan himself. <br>
+                He reached 1,000pp on 29 October 2020 and his current total <br>
+                pp is 1,304pp
+                <br>
+                <br>
+                Total time played: 2d 10h 59m
+                <br>
+                <br>
+                His top play is on Gravity Falls Theme Song - 16 Bit Mix <br>
+                and its a whole 92pp with an accuracy of 96.30% which is good <br>
+                for someone of his skill. As you can see he managed to hit 3 top plays <br>
+                in only 1 day which is quite good. That day he gained quite a few ranks <br>
+                (around 25k)
+            </h3>
+          </div>
+          
+          <div id="Tokyo" class="tabcontent">
+            <h2>His CSGO career</h2>
+            <h3> Voca started playing CSGO in 2016 and played activly for the next year and <br>
+              he managed to reach Gold Nova Master at the end of 2017</h3>
+          </div>
+          
+          <script>
+          function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+          </script>
+          <img class="logoyes" src="logo3.png" alt="">  
 </body>
 </html>

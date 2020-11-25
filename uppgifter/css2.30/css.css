@@ -1,0 +1,83 @@
+body  
+{  
+    margin: 0;  
+    padding: 0;  
+    font-family: 'Roboto', sans-serif;
+}  
+.login{  
+        width: 320px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 20 0 0 450px;  
+        padding: 80px; 
+        border: red solid 1px; 
+        margin-top: 10%;
+          
+}  
+h2{  
+    text-align: center;  
+    color: black;  
+    padding: 20px;  
+}  
+label{  
+    color: black;  
+    font-size: 17px;  
+}  
+#Uname{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}  
+#Pass{  
+    width: 300px;  
+    height: 30px;  
+    border: gray;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+      
+}  
+#log{  
+    width: 100px;  
+    height: 30px;  
+    border: none;  
+    padding-left: 7px;  
+    color: white;  
+    background-color: #774BEF;
+    font-family: 'Roboto', sans-serif;
+  
+  
+}  
+span{  
+    color: white;  
+    font-size: 17px;  
+}  
+a{  
+    float: right;  
+    color: #774BEF;
+    text-decoration: none;
+}  
+a.forgot {
+    margin-left: 50%;
+    margin-top: -10%;
+}
+a.create:hover {
+    color: #A372FF;
+    text-decoration: underline;
+}
+a.forgot:hover {
+    color: #A372FF;
+    text-decoration: underline;
+}
+.loggain:hover {
+    background-color: #A372FF;
+}
+input.loggain {
+    border: none;
+    background-color: #A372FF;
+}
+input.loggain:focus {
+    border: none;
+    background-color: #A372FF;
+}

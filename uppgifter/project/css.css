@@ -100,7 +100,6 @@ font-family: "Open Sans Condensed",sans-serif;
     overflow: hidden;
     border: 1px solid rgb(26, 26, 26);
     background-color: rgb(29, 29, 29);
-    ;
 }
   .tab button {
     background-color: inherit;
@@ -154,4 +153,20 @@ p {
     font-size: x-large;
     text-shadow: 2px 2px black;
     text-align: center;
+}
+.cstext {
+    color: white;
+    font-family: "Open Sans Condensed",sans-serif;
+    font-size: x-large;
+    text-shadow: 2px 2px black;
+    margin-top: 46%;
+    margin-left: 21%;
+}
+.cstitle {
+    color: white;
+    font-family: "Open Sans Condensed",sans-serif;
+    font-size: x-large;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    margin-left: 21%;
 }

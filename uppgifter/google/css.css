@@ -73,7 +73,7 @@ ul {
   }
   .buttons{
     margin-top:30px;
-    margin-left: 38%;
+    margin-left: 40%;
   }
   .button{
     background-color: #f5f5f5;
@@ -96,4 +96,71 @@ ul {
   }
 body {
     margin: 0%;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: smaller;
+    text-align: center;
+    margin-top: 2%;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.footer {
+    background-color: #f2f2f2;
+    padding: 1%;
+    color: #70757a;
+    border-top: 1px solid #dadce0;
+    padding-bottom: 2%;
+    
+}
+a.ad {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 1%;
+    color: #70757a;
+}
+a.biz {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 1%;
+    color: #70757a;
+}
+a.aboutg {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 1%;
+    color: #70757a;
+}
+a.how {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 60%;
+    color: #70757a;
+}
+.footer1 {
+    background-color: #f2f2f2;
+    padding: 1%;
+    color: #70757a;
+    border-top: 1px solid #dadce0;
+    margin-top: 5%;
+}
+a.finland {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 1%;
+    color: #70757a;
+}
+a.privacy {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 1%;
+    color: #70757a;
+}
+a.terms {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 1%;
+    color: #70757a;
+}
+a.settings {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 1%;
+    color: #70757a;
 }

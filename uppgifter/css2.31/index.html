@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <link rel="stylesheet" href="css.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ELEVATE</title>
+
 </head>
 <body>
     <div class="parent" id="page1">
 <div class="topbarp">
 <nav>
     <a href="#page1">Home</a>
-    <a href="#page4">About</a>
-    <a href="#" id="page3">Contact</a>
+    <a href="#page3">Contact</a>
     <div class="dropdown">Game ▼
     <div class="dropdown-content">
     <a href="#page2">Anomaly&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
@@ -23,7 +24,39 @@
 
     <div class="parent2" id="page2">
         <h1>ANOMALY</h1>
-        <p>Play as a man who lives far away from civilization and your goal is to survive</p>
+        <p>Play as a man who lives far away from civilization and your goal is <br>
+            to survive through all dangers.</p>
+        <h2>Ingame Screenshots</h2>
+        <div class="w3-content w3-section" style="max-width:800px">
+            <img class="mySlides" src="anomaly1.jpg" style="width:100%">
+            <img class="mySlides" src="anomaly2.jpg" style="width:100%">
+            <img class="mySlides" src="anomaly3.jpg" style="width:100%">
+          </div>
     </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
+        <div class="parent3" id="page3">
+            <h1 class="contacttext">Contact</h1>
+            <p class="twitter">@ELEVATEGAME</p>
+            <p class="instagram">@ELEVATEGAME</p>
+            <p class="email">ElevateGame@gmail.com</p>
+            <div class="child">
+                <img class="bird" src="twitter.png" alt="">
+        </div>
+        </div>
 </body>
 </html>

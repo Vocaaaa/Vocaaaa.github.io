@@ -85,8 +85,8 @@ a:hover {
 
   .dropdown:hover .dropdown-content {display: block;}
 p {
-    color: white;
-    font-family: Nexa;
+    color: #ffaf00;
+    font-family: 'Verlag A', 'Verlag B', "Verlag";
     font-size: xx-large;
     text-align: center;
 }
@@ -95,25 +95,33 @@ h2 {
     color: white;
     font-family: Reckfield-texture;
     font-size: 30px;
-    margin-top: 3%;
+    margin-top: 13%;
+
 }
 .mySlides {
     display:none;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-left: 45%;
     width: 100%;
 }
-img.bird {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    margin-left: 35%;
-    margin-top: -90%;
+h3 {
+    color: #ffaf00;
+    font-family: 'Verlag A', 'Verlag B', "Verlag";
+    font-size: x-large;
+    font-weight: lighter;
+    margin-left: 28%;
 }
-@media screen and (max-width: 600px) {
+.text {
+    margin-left: 50%;
+    margin-top: -12.5%;
+}
+@media screen and (max-width: 800px) {
     .parent {
         width: 100%;
         height: 212px;
+    }
+    .parent2 {
+        height: 400px;
     }
     p {
         font-size: smaller;

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css.css">
+  <script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+    </script>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optima</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="topbarp">
+            <img class="logo" src="https://optimaedu.fi/wp-content/themes/optima/gfx/icons/optima-logo.svg" alt="">
+            <div class="navbar">
+                <div class="dropdown">
+                  <button class="dropbtn">Information about Optima ▼
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#">Mission and vision</a>
+                    <a href="#">Study services</a>
+                    <a href="#">Find your way to Optima</a>
+                    <a href="#">History of Optima</a>
+                    <a href="#">Questions to Optima</a>
+                    <a href="#">Site search</a>
+                  </div>
+                </div>
+                <a href="Youth"></a>
+              </div>
+        </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+</div>
+</body>
+</html>

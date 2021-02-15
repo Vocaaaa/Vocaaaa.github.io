@@ -1,0 +1,133 @@
+.parent {
+    background-image: url(bg-om-oss.jpg);
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.topbar1 {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    font-family: 'Roboto Slab';
+    display: flex;
+    background-color: white;
+}
+h1 {
+    font-family: 'Roboto Slab';
+    margin-left: 2%;
+    margin-top: 4%;
+}
+body {
+    margin: 0%;
+}
+
+img.ig {
+    margin-left: 25%;
+    margin-right: 5%;
+}
+.topbar2 {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset rgb(212, 212, 212) 0px 5px 5px; 
+
+
+}
+a.about {
+    padding: 10px;
+    background-color: #E26641;
+    color: white;
+    border-radius: 7px;
+    font-family: 'Roboto';
+    text-decoration: none;
+}
+a.contact {
+    color: black;
+    font-family: 'Roboto';
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.about:hover {
+    padding: 10px;
+    background-color: #E26641;
+    color: white;
+    border-radius: 7px;
+}
+.contact:hover {
+    padding: 10px;
+    background-color: #E26641;
+    color: white;
+    border-radius: 7px;
+}
+h2 {
+    color: white;
+    font-size: x-large;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 25%;
+    font-family: 'Roboto';
+}
+h3 {
+    color: white;
+    font-size: 60px;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: -5%;
+    font-family: 'Roboto';
+}
+h5 {
+    color: rgb(255, 255, 255);
+    margin-right: -35%;
+    margin-left: 45%;
+    font-size: 4rem;
+    margin-top: -7%;
+  }
+  h4 {
+      color: white;
+      font-family: 'Roboto';
+      font-weight: lighter;
+      text-align: center;
+      margin-left: 10%;
+      margin-right: 10%;
+  }
+@media screen and (min-width: 700px) {
+    .topbar2 {
+        background: transparent;
+        box-shadow: none;
+    }
+    h1 {
+        margin-top: 0.2%;
+    }
+    img.ig {
+        margin-left: 50%;
+        margin-right: 1%;
+    }
+    nav {
+        margin-top: -8%;
+        margin-left: 10%;
+    }
+    h2 {
+        margin-top: 4%;
+        font-size: 60px;
+        margin-bottom: 5%;
+    }
+    h3 {
+        font-size: 100px;
+    }
+    body {
+        margin: 0%;
+    }
+    h4 {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+}

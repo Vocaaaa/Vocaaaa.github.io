@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body id="body">
+    <div id="parent">
+    <button id="red-knapp">Red</button>
+    <button id="blue-knapp">Blue</button>
+    <button id="green-knapp">Green</button>
+    <button id="pink-knapp">Pink</button>
+    <button id="brown-knapp">Brown</button>
+</div>
+    <script>
+        let body = document.getElementById("body");
+        let redButton = document.getElementById("red-knapp");
+        let blueButton = document.getElementById("blue-knapp");
+        let greenButton = document.getElementById("green-knapp");
+        let pinkButton = document.getElementById("pink-knapp");
+        let brownButton = document.getElementById("brown-knapp");
+
+        
+        redButton.addEventListener('click', changeBgToRed);
+        blueButton.addEventListener('click', changeBgToBlue);
+        greenButton.addEventListener('click', changeBgToGreen);
+        pinkButton.addEventListener('click', changeBgToPink);
+        brownButton.addEventListener('click', changeBgToBrown);
+        
+    function changeBgToRed() {
+      body.style.background = 'red';
+    }
+    function changeBgToBlue() {
+      body.style.background = 'blue';
+    }
+    function changeBgToGreen() {
+      body.style.background = 'green';
+    }
+    function changeBgToPink() {
+      body.style.background = 'pink';
+    }
+    function changeBgToBrown() {
+      body.style.background = 'brown';
+    }
+    </script>
+</body>
+</html>

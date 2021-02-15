@@ -1,0 +1,28 @@
+.parent {
+    background-image: url(bg.png);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+}
+.parent2 {
+    width: 100%;
+    height: 100vh;
+}
+.car {
+    width: 1000px;
+    height: 1000px;
+    margin-left: 20%;
+    margin-top: -40%;
+}
+.animate {
+    animation: up 500ms infinite linear;
+}
+@keyframes up {
+    0%{down: 150px;}
+    30%{down: 100px;}
+    70%{down: 100px;}
+    100%{down: 150px;}
+}
+body {
+    margin: 0%;
+}

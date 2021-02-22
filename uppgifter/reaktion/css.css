@@ -1,0 +1,19 @@
+body {
+    margin: 0%;
+}
+.parent {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#knapp {
+    width: 75px;
+    height: 40px;
+
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}

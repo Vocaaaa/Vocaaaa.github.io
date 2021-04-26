@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+
+  color: white;
+  background-color: #333333;
+}
+
+canvas {
+  display: block;
+  border: 1px solid #444444;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem;
+
+  width: 100%;
+  min-height: 100vh;
+}

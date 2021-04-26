@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: flex-start;
+  
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  .cell {
+    flex: 0 0 auto;
+    width: calc(100% / 8);
+    height: calc(100vh / 8);
+    border: 0px solid black;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+  }
+  .cell.--highlighted {
+      background: black;
+  }

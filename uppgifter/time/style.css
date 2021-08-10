@@ -4,9 +4,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(10, 10, 10);
 }
 h1 {
     font-family: sans-serif;
+    color: white;
     
 }
 .box {
@@ -15,4 +17,14 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 30%;
+
+}
+* {
+    margin: 0;
+}
+#text {
+    margin-top: -15%;
+    margin-left: 35%;
+
 }

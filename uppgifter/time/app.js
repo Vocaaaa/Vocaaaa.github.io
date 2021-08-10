@@ -1,12 +1,26 @@
-let d;
-let time = document.getElementById("tid");
+const timeElement = document.getElementById("time");
+const dateElement = document.getElementById("date");
 
-d = new Date();
+setInterval(update, 100);
 
-time.innerHTML = d;
+function update() {
+  const date = new Date();
 
-window.setInterval("run()", 1000);
+  timeElement.innerHTML = 
+    pad(date.getHours(), 2) + ":" + 
+    pad(date.getMinutes(), 2) + ":" + 
+    pad(date.getSeconds(), 2);
 
-function run() {
-    window .location.reload();
+  dateElement.innerHTML =
+    date.getFullYear() + "-" + 
+    pad(date.getMonth() + 1, 2) + "-" + 
+    pad(date.getDate(), 2); 
+}
+
+function pad(num, size) {
+  num = num.toString();
+  while(num.length < size) {
+    num = "0" + num;
+  }
+  return num;
 }

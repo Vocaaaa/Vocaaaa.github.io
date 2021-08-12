@@ -10,4 +10,4 @@ else{
     localStorage.pagecount[currentPage] = 1;
 }
 
-text.innerHTML = "Du har besökt denna hemsida " + localStorage.pagecount[currentPage] + " Gånger" ;
+text.innerHTML = "Du har besökt denna hemsida " + localStorage.pagecount[currentPage] + " gånger";

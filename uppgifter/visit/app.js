@@ -1,11 +1,13 @@
-const text = document.getElementById("text")
+let text = document.getElementById("text");
 
-updateVisitCount();
+!localStorage.pagecount ? localStorage.pagecount = {} : '';
 
-function updateVisitCount() {
-	fetch('https://api.countapi.xyz/update/vocaaaa.github.io/uppgifter/visit/?amount=1')
-	.then(res => res.json())
-	.then(res => {
-		text.innerHTML = res.value;
-	})
+let currentPage = window.location.href;
+if(localStorage.pagecount[currentPage]){
+    localStorage.pagecount[currentPage] = Number(localStorage.pagecount[currentPage]) + 1;
 }
+else{
+    localStorage.pagecount[currentPage] = 1;
+}
+
+text.innerHTML = "Du har besökt denna hemsida " + localStorage.pagecount[currentPage] + " Gånger" ;

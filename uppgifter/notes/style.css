@@ -28,3 +28,8 @@ button {
     margin-top: 1%;
     padding: 8px;
 }
+#time {
+    color: white;
+    font-family: monospace;
+    font-size: 0.9rem;
+}

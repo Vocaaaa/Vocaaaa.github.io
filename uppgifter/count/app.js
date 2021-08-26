@@ -1,15 +1,23 @@
-let oneday = 1000 * 60 * 60 * 24
-let present = new Date();
-let endYear = new Date(present.getFullYear(), 11, 31);
-let text = document.getElementById("text");
+const daysElement = document.getElementById("days");
+const hoursElement = document.getElementById("hours");
+const minutesElement = document.getElementById("minutes");
+const secondsElement = document.getElementById("seconds");
 
-if (present.getMonth() == 11 && present.getDate() > 25) endYear.setFullYear(endYear.getFullYear() + 1);
+setInterval(update, 100);
+function update() {
+    
 
-let result = Math.round(endYear.getTime() - present.getTime()) / (oneday);
+const now = new Date();
+const endOfYear = new Date((now.getFullYear() + 1) + "-01-01 00:00:00");
 
-let final = result.toFixed(0);
+const msToEndOfYear = endOfYear.getTime() - now.getTime();
+const days = Math.floor(msToEndOfYear / 86400000);
+const hours = Math.floor(msToEndOfYear / 3600000) % 24;
+const minutes = Math.floor(msToEndOfYear / 60000) % 60;
+const seconds = Math.floor(msToEndOfYear / 1000) % 60;
 
-text.innerHTML = "Number Of Days Until New Year: <br> <br> <br> <br> <br>"
-+ present + "<br> and <br>"
-+ endYear + " is: <br>"
-+ final + " Days";
+daysElement.textContent = days + " days";
+hoursElement.textContent = hours + " hours";
+minutesElement.textContent = minutes + " minutes";
+secondsElement.textContent = seconds + " seconds";
+}

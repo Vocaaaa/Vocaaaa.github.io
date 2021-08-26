@@ -9,6 +9,7 @@ function update() {
   timeElement.innerHTML = 
     pad(date.getHours(), 2) + ":" + 
     pad(date.getMinutes(), 2) + ":" + 
+    pad(date.getSeconds(), 2);
 
   dateElement.innerHTML =
     date.getFullYear() + "-" + 

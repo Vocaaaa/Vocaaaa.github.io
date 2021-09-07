@@ -9,7 +9,7 @@ if(isNaN(count)) {
 
 count++;
 if(count == 1) {
-    containerElement.textContent = `Du har besökt denna hemsida ${count} gång..`;
+    containerElement.textContent = `Du har besökt denna hemsida ${count} gång.`;
 }
     else{
 containerElement.textContent = `Du har besökt denna hemsida ${count} gånger.`;

@@ -26,12 +26,13 @@ button{
 	background: transparent;
 	box-shadow: inset -2px -2px 2px rgba(255,255,255,.2),
 				inset 2px 5px 15px rgba(0,0,0,.5);
+				user-select: none;
 }
 button:active{
 	box-shadow: inset 2px 2px 2px rgba(255,255,255,.1),
 				inset -2px -5px 15px rgba(0,0,0,.5);
 }
-input{
+span{
 	border-radius: 10px;
 	outline: none;
 	border: none;
@@ -44,5 +45,6 @@ input{
 	background: transparent;
 	box-shadow: inset -2px -2px 2px rgba(255,255,255,.2),
 				inset 2px 5px 15px rgba(0,0,0,.5);
-
+	user-select: none;
+	font-family: monospace;
 }

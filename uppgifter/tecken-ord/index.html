@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ord Räknare</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Char Counter</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="parent">
-        <textarea id="write" placeholder="Type Here!"></textarea>
-        <h2 id="text"></h2>
+  <div class="container">
+    <h1>Character Counter</h1>
+    <textarea id="textarea" placeholder="Type here!"></textarea>
+    <div class="footer">
+      <div class="number-display">
+        <span id="characters">0</span>
+        <span>characters</span>
+      </div>
+      <div class="number-display">
+        <span id="words">0</span>
+        <span>words</span>
+      </div>
     </div>
-    
-    <script src="app.js"></script>
+  </div>
+  <script src="app.js"></script>
 </body>
 </html>

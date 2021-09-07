@@ -1,16 +1,26 @@
-let addBtn = document.getElementById('add');
-let subBtn = document.getElementById('sub');
-let qty = document.getElementById('qtyBox');
+let addBtn = document.getElementById("add");
+let subBtn = document.getElementById("sub");
+let box = document.getElementById("qtyBox");
 
-addBtn.addEventListener('click',()=>{
-    qty.value = parseInt(qty.value) + 1;
-});
+let number = box.innerHTML;
 
-subBtn.addEventListener('click',()=>{
-    if (qty.value <= -5) {
-        qty.value = -5;
+localStorage.getItem("count");
+
+addBtn.addEventListener('click', addNumber);
+subBtn.addEventListener('click', subNumber);
+
+function addNumber() {
+    localStorage.setItem("count", number);
+    box.value = parseInt(box.value) + 1;
+}   
+
+function subNumber() {
+    localStorage.setItem("count", number);
+    if (box.value <= -999) {
+        box.value = -999;
     }
     else{
-        qty.value = parseInt(qty.value) - 1;
+        localStorage.setItem("count", number);
+        box.value = parseInt(box.value) - 1;
     }
-});
+}

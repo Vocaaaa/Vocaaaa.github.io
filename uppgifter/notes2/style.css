@@ -42,3 +42,23 @@ button {
 button:hover {
     border: 2px solid red;
 }
+#mono {
+    font-family: monospace;
+}
+#mono:hover {
+    text-decoration-color: red;
+}
+#sans {
+    font-family: sans-serif;
+}
+#serif {
+    font-family: serif;
+}
+option {
+    width: 100px;
+    background: rgb(10, 10, 10);
+    color: white;
+}
+option:hover {
+    background: red;
+}

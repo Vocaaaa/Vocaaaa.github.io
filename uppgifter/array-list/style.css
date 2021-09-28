@@ -16,6 +16,9 @@
     font-size: 2rem;
     font-family: monospace;
 }
+p {
+    margin: 20px;
+}
 input {
     resize: none;
     background: rgb(10, 10, 10);
@@ -37,6 +40,10 @@ button {
     font: inherit;
     margin-bottom: 20px;
 }
+button:hover {
+    border: 2px white solid;
+}
 ul {
     list-style: none;
+    cursor: pointer;
 }

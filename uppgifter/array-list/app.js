@@ -1,30 +1,46 @@
-let todos = ["Gå till skolan", "Programmera", "Köpa mat!"];
-let list = document.getElementById("list");
-let addBtn = document.getElementById("button");
-let textBox = document.getElementById("textbox");
-let newArr = textBox.value;
+const list = document.getElementById('list');
+const textBox = document.getElementById("textbox");
+const addBtn = document.getElementById("button");
 
+const todos = [
+    { text: "Hej på dig!", done: false },
+    { text: "Programmera", done: true },
+    { text: "Gå hem", done: false }
+];
 
+addBtn.addEventListener("click", addArr);
 
+updateView();
 
-for(i = 0; i < todos.length; i++) {
-    let li = document.createElement('li');
-    li.textContent = todos[i];
-    list.appendChild(li);
-    li.addEventListener("click", tuning);
-    addBtn.addEventListener("click", addText);
-    
-function tuning(e) {
-    if(li.style.textDecoration == "line-through") {
-    li.style.textDecoration = "none";
+function addArr() {
+    todos.push({
+        text: textBox.value,
+        done: false
+    });
+
+    updateView();
+};
+
+function updateView() {
+
+    list.innerHTML = "";
+
+    for(let i = 0; i < todos.length; i++) {
+        const li = document.createElement('li');
+        li.dataset.index = i;
+        li.textContent = todos[i].text;
+        if(todos[i].done) {
+            li.style.textDecoration = "line-through";
+        }
+        list.appendChild(li);
+        li.addEventListener('click', onItemClicked);
+      }
+    }    
+
+      function onItemClicked(e) {
+
+        todos[e.target.dataset.index].done = !todos[e.target.dataset.index].done;
+
+        updateView();
     }
-    else{
-        li.style.textDecoration = "line-through";
-    }
-}
-function addText() {
-    todos.push(textBox.value);
-    console.log(todos[3]);
-    
-}
-}
+

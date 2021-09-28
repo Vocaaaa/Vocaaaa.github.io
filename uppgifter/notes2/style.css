@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(10, 10, 10);
+    color: white;
+    font-family: monospace;
+    font-size: 3rem;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+textarea {
+    font: inherit;
+    background: rgb(10, 10, 10);
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    resize: none;
+}
+button {
+    font: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: rgb(10, 10, 10);
+    color: white;
+    border: solid 1px red;
+    font-size: 3rem;
+}
+button:hover {
+    border: 2px solid red;
+}
+#mono {
+    font-family: monospace;
+}
+#mono:hover {
+    text-decoration-color: red;
+}
+#sans {
+    font-family: sans-serif;
+}
+#serif {
+    font-family: serif;
+}
+option {
+    width: 100px;
+    background: rgb(10, 10, 10);
+    color: white;
+}
+option:hover {
+    background: red;
+}

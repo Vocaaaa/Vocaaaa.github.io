@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: grid;
+    width: 100%;
+    min-height: 100vh;
+    grid-template-areas: 
+    "header header header header"
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar main main main"
+    "footer footer footer footer"
+    ;
+}
+.header {
+    background: burlywood;
+    grid-area: header;
+}
+.sidebar {
+    background: red;
+    grid-area: sidebar;
+}
+.main {
+    background: blue;
+    grid-area: main;
+}
+.footer {
+    background: green;
+    grid-area: footer;
+}

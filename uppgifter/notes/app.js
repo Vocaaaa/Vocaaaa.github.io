@@ -2,6 +2,7 @@ let textarea = document.getElementById("textarea");
 let button = document.getElementById("button");
 let clearButton = document.getElementById("clear");
 let timeElement = document.getElementById("time");
+let loadElement = document.getElementById("load");
 
 clearButton.addEventListener("click", function () {
     textarea.value = "";
@@ -11,12 +12,16 @@ function save() {
     let tidElement = update();
     localStorage.setItem("save", document.getElementById("textarea").value);
     localStorage.setItem("tid", tidElement);
-}
+};
 
 window.onload = function () {
-    document.getElementById("textarea").value = localStorage.getItem("save");
     tidElement = localStorage.getItem("tid");
 };
+
+loadElement.addEventListener("click", function load() {
+  document.getElementById("textarea").value = localStorage.getItem("save");
+  tidElement = localStorage.getItem("tid");
+});
 
     function update() {
         const date = new Date();

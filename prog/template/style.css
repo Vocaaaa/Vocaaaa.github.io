@@ -1,0 +1,350 @@
+:root {
+    --primary-color: rgb(26, 26, 26);
+    --secondary-color: rgb(10, 10, 10);
+    --font-color: rgb(255, 255, 255);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--primary-color);
+    font-family: 'Lato', sans-serif;
+}
+.container {
+    width: 100%;
+    max-height: 100vh;
+    background-color: var(--primary-color);
+    color: white;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+.header {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    align-items: center;
+    justify-content: space-between;
+    
+    background: linear-gradient(rgb(0, 0, 0), rgb(26, 26, 26));
+}
+.header ul {
+    padding: 0 2rem;
+    display: flex;
+}
+.header ul li {
+    padding: 0 1rem;
+}
+.search-box{
+    width: fit-content;
+    height: fit-content;
+    right: 50px;
+    top: 15px;
+    position: absolute;
+  }
+  .input-search{
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    background: #eaa21d;
+    padding-right: 40px;
+    color:#fff;
+  }
+  .input-search::placeholder{
+    color:rgba(255,255,255,.5);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+  }
+  .btn-search{
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    color:#ffffff ;
+    background-color:transparent;
+    pointer-events: painted;  
+  }
+  .btn-search:focus ~ .input-search{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  .input-search:focus{
+    width: 300px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+.sales {
+    height: 200px;
+    width: 50%;
+    background: url(https://www.multitronic.fi/images/banners/xBattlefield_desktop_SWE.jpg.pagespeed.ic.4J8OIjXtkJ.webp);
+    background-size: cover;
+    margin: auto;
+    -webkit-box-shadow: 5px 5px 5px 0px rgb(0, 0, 0);
+    -moz-box-shadow: 5px 5px 5px 0px rgb(0, 0, 0);
+    box-shadow: 5px 5px 5px 0px rgb(0, 0, 0);
+    border-radius: 15px 2px;
+    background-color: var(--primary-color);
+    position: relative;
+
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .Containers {
+    display: none;
+  }
+  
+  .Back, .forward {
+    cursor: pointer;
+    position: absolute;
+    top: 48%;
+    width: auto;
+    margin-top: -23px;
+    padding: 17px;
+    color: grey;
+    font-weight: bold;
+    font-size: 19px;
+    transition: 0.4s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+  }
+  
+  .forward {
+    right: 0;
+    border-radius: 4px 0 0 4px;
+  }
+  
+  .Back:hover, .forward:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .Info {
+    color: #e3e3e3;
+    font-size: 16px;
+    padding: 10px 14px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .MessageInfo {
+    color: #f2f2f3;
+    font-size: 14px;
+    padding: 10px 14px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .dots {
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    margin: 0 3px;
+    background-color: #acc;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+  }
+  
+  .enable, .dots:hover {
+    background-color: #717161;
+  }
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.4s;
+    animation-name: fade;
+    animation-duration: 1.4s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
+  }
+  
+  @keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
+  }
+.logo {
+
+    right: 1450px;
+    position: absolute;
+}
+.showcase {
+    display: flex;
+    width: 100%;
+    min-height: 480px;
+}
+.sidebar {
+    height: 80%;
+    width: 250px;
+    background-color: var(--primary-color);
+    top: 10px;
+    position: absolute;
+    
+
+}
+.sidebar ul {
+    display: block;
+    padding: 2rem 2rem;
+}
+.sidebar ul li {
+    padding: 1rem 0;
+}
+.navigation {
+    position: fixed;
+    width: 60px;
+    height: 600px;
+    background: rgb(26, 26, 26);
+    transition: 0.5s;
+    overflow: hidden;
+    top: 200px;
+}
+.navigation:hover,
+.navigation.active
+ {
+    width: 300px;
+}
+
+.navigation ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.navigation ul li {
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+.navigation ul li:hover {
+    background: #eaa21d;
+}
+.navigation ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    text-align: center;
+}
+.navigation ul li a .icon .fa {
+    font-size: 24px;
+}
+.navigation ul li a .title {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+.toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background:rgb(10, 10, 10);
+    cursor: pointer;
+}
+.toggle.active {
+    background: #ea1d63;
+}
+.toggle:before {
+    content: '\f0c9';
+    font-family: fontAwesome;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+}
+.toggle.active:before {
+    content: '\f00d';
+}
+.products {
+    width: 100%;
+
+    background: var(--primary-color);
+}
+.rtxshow {
+  width: 600px;
+  left: 200px;
+  position: absolute;
+}
+.rtxtext {
+  color: white;
+  width: 800px;
+  right: 300px;
+  top: 400px;
+  position: absolute;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    font-family: 'Lato', sans-serif;
+}
+.logosmall {
+    bottom: 0;
+    
+}
+.footertext {
+    
+    position: absolute;
+    color: white;
+    padding-top: 100px;
+}
+hr {
+  color: blue;
+  background: blue;
+  width: 100%;
+  position: absolute;
+  bottom: 40px;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--font-color);
+}
+a:hover {
+    text-decoration: underline;
+}

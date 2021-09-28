@@ -1,11 +1,19 @@
-let text = document.getElementById("text");
+const containerElement = document.getElementById("container");
+const button = document.getElementById("button");
 
-if (localStorage.pagecount)
-{
-localStorage.pagecount=Number(localStorage.pagecount) +1;
+let count = parseInt(localStorage.getItem("count"));
+
+if(isNaN(count)) {
+    count = 0;
 }
-else
-{
-localStorage.pagecount=1;
+
+count++;
+if(count == 1) {
+    containerElement.textContent = `Du har besökt denna hemsida ${count} gång.`;
 }
-text.innerHTML = ("Du har besökt denna hemsida "+ localStorage.pagecount + " gånger.");
+    else{
+containerElement.textContent = `Du har besökt denna hemsida ${count} gånger.`;
+}
+
+localStorage.setItem("count", count);
+button.addEventListener("click", reset());

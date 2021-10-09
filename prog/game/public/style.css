@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    background: #0e1538;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+canvas{
+    display: block;
+    margin: 0 auto;
+}
+#counter {
+    margin-bottom: 10px;
+}
+.highscore {
+    width: 400px;
+    height: 500px;
+    background: #4dc1f9;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#highscores {
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    margin-top: -350px;
+
+}
+#button {
+    width: 100px;
+    height: 65px;
+    font: inherit;
+    font-weight: bold;
+    background: transparent;
+    color: white;
+    background: #15c;
+    outline: none;
+    border: none;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 350px;
+}
+#button:hover {
+    border: white solid 3px;
+}
+#main-text {
+    margin-bottom: 50px;
+}
+.highscore-bg {
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    top: 471px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.food {
+    top: 260px;
+    position: absolute;
+    width: 80px;
+    left: 840px;
+}
+.highscore-trophy {
+    position: absolute;
+    width: 80px;
+    top: 260px;
+    right: 840px;
+}
+#last-round {
+    position: absolute;
+    top: 350px;
+    left: 870px;
+    font-size: 3rem;
+}
+#highscore-round {
+    position: absolute;
+    top: 350px;
+    font-size: 3rem;
+    right: 865px;
+}

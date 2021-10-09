@@ -4,22 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Skicka data till en server</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>
-<body>
-    <div class="container">
-        <h1>Login</h1>
-        <form method="GET">
-        <label for="">Namn</label>
-            <input type="text">
-        <label for="">E-post</label>
-            <input type="text">
-        <label for="">Lösenord</label>
-            <input type="text">
-        <button type="submit">Submit</button>
-    </form>
+<body> 
+<div class="container is-mobile">
+    <div class="columns is-centered mt-6">
+        <div class="column is-one-quarter">
+            <form method="post" class="form is-centered" action="/saveData">
+                <div class="field"></div>
+                <label class="label" for="name">Skriv ditt namn:</label>
+                <input class="input" type="text" name="name" id="name" placeholder="Användarnamn">
+                <div class="field"></div>
+                <label class="label" for="email">E-post</label>
+                <input class="input" type="email" name="email" id="email" placeholder="E-post">
+                <div class="field"></div>
+                <label class="label" for="password">Lösenord:</label>
+                <input class="input" type="password" name="password" id="password" placeholder="Lösenord">
+                <div class="field"></div>
+                <button class="button is-primary" type="submit">Skicka</button>
+            </form>
+            <div class="field"></div>
+            <button class="button is-link" id="btn">Hämta</button>
+        </div>
     </div>
-    <script src="app.js"></script>
+</div> 
+<script src="app.js"></script>
 </body>
 </html>

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    color: rgb(15, 15, 15); 
+    font-family: 'Lato', sans-serif;
+}
+.header {
+    width: 100%;
+    height: 50px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.instagram-logo {
+    font-size: 2rem;
+    color: rgb(240, 240, 240);
+    padding-right: 12px;
+}
+.youtube-logo {
+    color: rgb(240, 240, 240);
+    font-size: 2rem;
+    padding-right: 12px;
+}
+.facebook-logo {
+    color: rgb(240, 240, 240);
+    font-size: 2rem;
+}
+.header-two {
+    background: white;
+    width: 100%;
+    height: 180px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-text {
+    background: black;
+    width: 120px;
+    height: 100px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.7rem;
+    font-weight: 400;
+    line-height: 1;
+    position: absolute;
+    left: 100px;
+    font-family: 'Alumni Sans', sans-serif;
+}
+.main-image {
+    background-image: url(middle-picture.PNG);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 650px;
+    object-fit: cover;
+    background-position: top;
+}
+.search-glass {
+    color: black;
+    position: absolute;
+    right: 680px;
+    font-weight: lighter;
+}
+.input {
+    width: 350px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    font: inherit;
+    position: absolute;
+    right: 300px;
+}
+.clothing {
+    font-size: 1.1rem;
+    padding-right: 30px;
+    position: absolute;
+    left: 300px;
+}
+.dildos {
+    font-size: 1.1rem;
+    padding-right: 30px;
+    position: absolute;
+    left: 450px;
+}
+.sex-slaves {
+    font-size: 1.1rem;
+    padding-right: 30px;
+    position: absolute;
+    left: 570px;
+}
+.tuning {
+    font-size: 1.1rem;
+    padding-right: 30px;
+    position: absolute;
+    left: 720px;
+}
+.shopping-cart {
+    position: absolute;
+    right: 200px;
+}
+.cart-text {
+    position: absolute;
+    right: 195px;
+    top: 165px;
+}

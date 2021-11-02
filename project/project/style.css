@@ -27,10 +27,18 @@
     color: rgb(240, 240, 240);
     padding-right: 12px;
 }
+.instagram-logo:hover {
+    color: rgb(230, 230, 11);
+    cursor: pointer;
+}
 .youtube-logo {
     color: rgb(240, 240, 240);
     font-size: 2rem;
     padding-right: 12px;
+}
+.youtube-logo:hover {
+    color: rgb(230, 230, 11);
+    cursor: pointer;
 }
 .facebook-logo {
     color: rgb(240, 240, 240);
@@ -60,9 +68,13 @@
     position: absolute;
     left: 100px;
     font-family: 'Alumni Sans', sans-serif;
+    text-decoration: none;
 }
 .main-text:hover {
-    background: rgb(207, 207, 14);
+    background: rgb(230, 230, 11);
+    color: black;
+    cursor: pointer;
+
 }
 .main-image {
     background-image: url(middle-picture.PNG);
@@ -117,6 +129,10 @@
     position: absolute;
     right: 200px;
 }
+.shopping-cart:hover {
+    color: rgb(230, 230, 11);
+    cursor: pointer;
+}
 .cart-text {
     position: absolute;
     right: 195px;
@@ -131,6 +147,7 @@
     left: 200px;
     top: 910px;
     position: absolute;
+    font-size: 1.5rem;
 }
 .second-middle-line {
     top: 970px;
@@ -185,12 +202,18 @@ button {
     text-decoration: none;
     color: black;
 }
+.buy:hover {
+    color: rgb(230, 230, 11);
+}
 .buy-one {
     position: absolute;
     left: 605px;
     top: 1300px;
     text-decoration: none;
     color: black;
+}
+.buy-one:hover {
+    color: rgb(230, 230, 11);
 }
 .buy-two {
     position: absolute;
@@ -199,12 +222,18 @@ button {
     text-decoration: none;
     color: black;
 }
+.buy-two:hover {
+    color: rgb(230, 230, 11);
+}
 .buy-three {
     position: absolute;
     left: 1192px;
     top: 1300px;
     text-decoration: none;
     color: black;
+}
+.buy-three:hover {
+    color: rgb(230, 230, 11);
 }
 .buy-four {
     position: absolute;
@@ -213,16 +242,213 @@ button {
     text-decoration: none;
     color: black;
 }
+.buy-four:hover {
+    color: rgb(230, 230, 11);
+}
+.right-arrow {
+    position: absolute;
+    right: 140px;
+    top: 1130px;
+}
+.left-arrow {
+    position: absolute;
+    left: 140px;
+    top: 1130px;
+}
 .third-middle-line {
     width: 100%;
     position: absolute;
     top: 1350px;
 }
+.most-popular-text {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 200px;
+    top: 1370px;
+}
+.fourth-middle-line {
+    width: 100%;
+    top: 1420px;
+    position: absolute;
+}
+i .fas fa-fire-alt {
+    padding-left: 100px;
+}
+.popular-image {
+    width: 220px;
+    position: absolute;
+    left: 200px;
+    top: 1470px;
+}
+.popular-image-one {
+    width: 220px;
+    position: absolute;
+    left: 560px;
+    top: 1470px;
+}
+.popular-image-two {
+    width: 220px;
+    position: absolute;
+    left: 860px;
+    top: 1470px;
+}
+.popular-image-three {
+    width: 220px;
+    position: absolute;
+    left: 1160px;
+    top: 1470px;
+}
+.popular-image-four {
+    width: 240px;
+    position: absolute;
+    left: 1460px;
+    top: 1470px;
+}
+.visit-one {
+    position: absolute;
+    left: 230px;
+    top: 1740px;
+    text-decoration: none;
+    color: black;
+}
+.visit-two {
+    position: absolute;
+    left: 630px;
+    top: 1740px;
+    text-decoration: none;
+    color: black;
+}
+.visit-three {
+    position: absolute;
+    left: 910px;
+    top: 1740px;
+    text-decoration: none;
+    color: black;
+}
+.visit-four {
+    position: absolute;
+    left: 1200px;
+    top: 1740px;
+    text-decoration: none;
+    color: black;
+}
+.visit-five {
+    position: absolute;
+    right: 240px;
+    top: 1740px;
+    text-decoration: none;
+    color: black;
+}
+.visit-one:hover {
+    color: rgb(230, 230, 11);
+}
+.visit-two:hover {
+    color: rgb(230, 230, 11);
+}
+.visit-three:hover {
+    color: rgb(230, 230, 11);
+}
+.visit-four:hover {
+    color: rgb(230, 230, 11);
+}
+.visit-five:hover {
+    color: rgb(230, 230, 11);
+}
+.fifth-middle-line {
+    width: 100%;
+    position: absolute;
+    top: 1800px;
+}
+.hoodies {
+    position: absolute;
+    top: 1860px;
+    font-size: 1.5rem;
+    left: 300px;
+}
+.hoodies:hover {
+    color: rgb(230, 230, 11);
+    cursor: pointer;
+    text-decoration: underline black;
+}
+.pants {
+    position: absolute;
+    top: 1860px;
+    font-size: 1.5rem;
+    left: 600px;
+}
+.pants:hover {
+    color: rgb(230, 230, 11);
+    cursor: pointer;
+    text-decoration: underline black;
+}
+.caps {
+    position: absolute;
+    top: 1860px;
+    font-size: 1.5rem;
+    left: 900px;
+}
+.caps:hover {
+    color: rgb(230, 230, 11);
+    cursor: pointer;
+    text-decoration: underline black;
+}
+.glasses {
+    position: absolute;
+    top: 1860px;
+    font-size: 1.5rem;
+    left: 1200px;
+}
+.glasses:hover {
+    color: rgb(230, 230, 11);
+    cursor: pointer;
+    text-decoration: underline black;
+}
+.stickers {
+    position: absolute;
+    top: 1860px;
+    font-size: 1.5rem;
+    left: 1500px;
+}
+.stickers:hover {
+    color: rgb(230, 230, 11);
+    cursor: pointer;
+    text-decoration: underline black;
+}
+.hoodie-icon {
+    width: 150px;
+    position: absolute;
+    top: 1920px;
+    left: 275px;
+}
+.pants-icon {
+    width: 150px;
+    position: absolute;
+    top: 1920px;
+    left: 565px;
+}
+.caps-icon {
+    width: 150px;
+    position: absolute;
+    top: 1920px;
+    left: 880px;
+}
+.glasses-icon {
+    width: 150px;
+    position: absolute;
+    top: 1920px;
+    left: 1180px;
+}
+.stickers-icon {
+    width: 150px;
+    position: absolute;
+    top: 1920px;
+    left: 1480px;
+}
 .footer {
     background: black;
     width: 100%;
     height: 300px;
-    top: 1450px;
+    top: 2150px;
     position: absolute;
     color: white;
     display: flex;
@@ -233,6 +459,7 @@ button {
 .main-footer-text {
     font-size: 2rem;
     top: 50px;
+    color: rgb(230, 230, 11);
     position: absolute;
 }
 .footer p {
@@ -240,28 +467,65 @@ button {
     position: absolute;
 }
 .contact {
-    left: 250px;
+    left: 500px;
+}
+.contact:hover {
+    color: rgb(230, 230, 11);
+    cursor: pointer;
 }
 .about {
-    left: 600px;
+    left: 700px;
+}
+.about:hover {
+    color: rgb(230, 230, 11);
+    cursor: pointer;
 }
 .store {
-    right: 600px;
+    right: 700px;
+}
+.store:hover {
+    color: rgb(230, 230, 11);
+    cursor: pointer;
+}
+.nigga:hover {
+    color: rgb(230, 230, 11);
+    cursor: pointer;
 }
 .who {
-    right: 250px;
+    right: 500px;
+}
+.who:hover {
+    color: rgb(230, 230, 11);
+    cursor: pointer;
 }
 .youtube-logo-one {
-    bottom: 20px;
+    bottom: 40px;
     position: absolute;
     left: 770px;
 }
 .instagram-logo-one {
-    bottom: 20px;
+    bottom: 40px;
     position: absolute;
     right: 770px;
 }
 .twitter-logo {
-    bottom: 20px;
+    bottom: 40px;
     position: absolute;
+}
+.youtube-logo-one:hover {
+    color: rgb(230, 230, 11);
+    cursor: pointer;
+}
+.instagram-logo-one:hover {
+    color: rgb(230, 230, 11);
+    cursor: pointer;
+}
+.twitter-logo:hover {
+    color: rgb(230, 230, 11);
+    cursor: pointer;
+}
+.small-text {
+    bottom: 5px;
+    position: absolute;
+    font-size: 1rem;
 }

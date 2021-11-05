@@ -136,6 +136,7 @@
     font-weight: bold;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1rem;
+    outline: none;
     
 }
 input::placeholder {

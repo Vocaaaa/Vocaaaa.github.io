@@ -203,7 +203,7 @@ button {
     color: black;
 }
 .buy:hover {
-    color: rgb(230, 230, 11);
+    color: rgb(150, 150, 150);
 }
 .buy-one {
     position: absolute;
@@ -213,7 +213,7 @@ button {
     color: black;
 }
 .buy-one:hover {
-    color: rgb(230, 230, 11);
+    color: rgb(150, 150, 150);
 }
 .buy-two {
     position: absolute;
@@ -223,7 +223,7 @@ button {
     color: black;
 }
 .buy-two:hover {
-    color: rgb(230, 230, 11);
+    color: rgb(150, 150, 150);
 }
 .buy-three {
     position: absolute;
@@ -233,7 +233,7 @@ button {
     color: black;
 }
 .buy-three:hover {
-    color: rgb(230, 230, 11);
+    color: rgb(150, 150, 150);
 }
 .buy-four {
     position: absolute;
@@ -243,7 +243,7 @@ button {
     color: black;
 }
 .buy-four:hover {
-    color: rgb(230, 230, 11);
+    color: rgb(150, 150, 150);
 }
 .right-arrow {
     position: absolute;
@@ -340,19 +340,19 @@ i .fas fa-fire-alt {
     color: black;
 }
 .visit-one:hover {
-    color: rgb(230, 230, 11);
+    color: rgb(150, 150, 150);
 }
 .visit-two:hover {
-    color: rgb(230, 230, 11);
+    color: rgb(150, 150, 150);
 }
 .visit-three:hover {
-    color: rgb(230, 230, 11);
+    color: rgb(150, 150, 150);
 }
 .visit-four:hover {
-    color: rgb(230, 230, 11);
+    color: rgb(150, 150, 150);
 }
 .visit-five:hover {
-    color: rgb(230, 230, 11);
+    color: rgb(150, 150, 150);
 }
 .fifth-middle-line {
     width: 100%;
@@ -366,7 +366,7 @@ i .fas fa-fire-alt {
     left: 300px;
 }
 .hoodies:hover {
-    color: rgb(230, 230, 11);
+    color: rgb(150, 150, 150);
     cursor: pointer;
     text-decoration: underline black;
 }
@@ -377,7 +377,7 @@ i .fas fa-fire-alt {
     left: 600px;
 }
 .pants:hover {
-    color: rgb(230, 230, 11);
+    color: rgb(150, 150, 150);
     cursor: pointer;
     text-decoration: underline black;
 }
@@ -388,7 +388,7 @@ i .fas fa-fire-alt {
     left: 900px;
 }
 .caps:hover {
-    color: rgb(230, 230, 11);
+    color: rgb(150, 150, 150);
     cursor: pointer;
     text-decoration: underline black;
 }
@@ -399,7 +399,7 @@ i .fas fa-fire-alt {
     left: 1200px;
 }
 .glasses:hover {
-    color: rgb(230, 230, 11);
+    color: rgb(150, 150, 150);
     cursor: pointer;
     text-decoration: underline black;
 }
@@ -410,7 +410,7 @@ i .fas fa-fire-alt {
     left: 1500px;
 }
 .stickers:hover {
-    color: rgb(230, 230, 11);
+    color: rgb(150, 150, 150);
     cursor: pointer;
     text-decoration: underline black;
 }

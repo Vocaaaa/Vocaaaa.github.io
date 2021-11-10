@@ -48,8 +48,32 @@ function createWordSpan(color, content) {
     return span;
 }
 
-document.body.onkeyup = function(e){
+document.body.onkeyup = function(e, event){
     if(e.keyCode == 32){
+        event.preventDefault();
+
+        const userInput = input.value;
+    
+        if (userInput === "") {
+            return;
+        }
+    
+        const isCorrect = userInput === state.currentWord;
+    
+        let span;
+        if (isCorrect) {
+            span = createWordSpan('greenyellow', userInput);
+            state.score += 1;
+        } else {
+            span = createWordSpan('red', userInput);
+        }
+    
+        mainContent.appendChild(span);
+    
+        input.value = "";
+    
+        nextWord();
+        renderStats();
         startGameButton.className = "hide";
         input.className = "bruh";
         statContent.className = "";

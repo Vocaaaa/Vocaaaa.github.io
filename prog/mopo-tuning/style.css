@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+}
+
+.header {
+    width: 100%;
+    height: 120px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 0;
+
+    background: #0c0c0c;
+}
+
+a {
+    font-family: 'Dongle', sans-serif;
+}
+
+.brand-name {
+    color: #fff;
+
+    position: absolute;
+
+    top: 40px;
+
+
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline red;
+    font-size: 3rem;
+
+    user-select: none;
+    cursor: pointer;
+}
+.info-mail {
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    position: absolute;
+    top: 15px;
+}
+.search-bar {
+    width: 225px;
+    height: 30px;
+
+    background: none;
+
+    font-family: 'Lato', sans-serif;
+
+
+    outline: none;
+    border: none;
+    border-bottom: 1px solid red;
+
+    color: white;
+
+    font-size: 1rem;
+
+    position: absolute;
+    left: 1250px;
+    top: 55px;
+
+    padding-left: 10px;
+    user-select: none;
+}
+::placeholder {
+    color: white;
+}
+.search-glass {
+    color: red;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 55px;
+    left: 1490px;
+    cursor: pointer;
+}
+
+.search-bar-box-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.shopping-bag {
+    color: white;
+    width: 25px;
+    height: 25px;
+    font-size: 1.5rem;
+
+    position: absolute;
+    left: 1600px;
+    top: 60px;
+}
+.header-two {
+    background: #0c0c0c;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    top: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-two a {
+    color: #fff;
+    text-decoration: none;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}.header-two a:hover {
+    border-bottom: 2px solid red;
+}
+

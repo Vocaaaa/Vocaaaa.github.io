@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: #111;
 }
 
 .container {
@@ -116,6 +116,9 @@ a {
     left: 1600px;
     top: 60px;
 }
+.shopping-bag:hover {
+    color: red;
+}
 .header-two {
     background: #0c0c0c;
     width: 100%;
@@ -134,7 +137,14 @@ a {
     padding-left: 25px;
     padding-bottom: 10px;
     cursor: pointer;
-}.header-two a:hover {
+}
+.header-two a:hover {
     border-bottom: 2px solid red;
 }
+.main {
+    width: 100%;
+    height: 100vh;
 
+    background-position: center;
+    object-fit: cover;
+}

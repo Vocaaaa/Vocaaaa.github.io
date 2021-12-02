@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    background: #161b22;
+    width: 100%;
+    height: 100vh;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header {
+    background-color: #1c1f21;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    border-bottom: 1px solid #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-image {
+    position: absolute;
+    left: 450px;
+}
+.header-text {
+    left: 520px;
+    position: absolute;
+    font-size: 1.5rem;
+    color: white;
+}
+.main {
+    position: absolute;
+    top: 100px;
+    background: white;
+    width: 100%;
+    height: 89.4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+table {
+    width: 1000px;
+    background: white;
+    color: black;
+    position: absolute;
+    top: 100px;
+    border-collapse: collapse;
+    border-radius: 5px;
+    border: 1px solid #eeeeee;
+    border-top: none;
+}
+td, th {
+    text-align: left;
+    padding: 10px;
+    border-bottom: #eeeeee 1px solid;
+    font-weight: normal;
+}
+tr:hover {
+    background: #fcfcfc;
+}
+.table-top {
+    width: 1000px;
+    height: 30px;
+    background: #fcfcfc;
+    border-bottom: #eeeeee 1px solid;
+    position: absolute;
+    top: 70px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: row;
+}
+.name {
+    position: absolute;
+    left: 15px;
+    top: 5px;
+}
+.hr-change {
+    position: absolute;
+    top: 5px;
+    left: 385px;
+}
+.crypto-price {
+    position: absolute;
+    top: 5px;
+    left: 640px;
+}
+.market-graph {
+    top: 5px;
+    position: absolute;
+    left: 830px;
+}
+.btc-value.up {
+    color: lime;
+}
+.btc-value.down {
+    color: red;
+}
+.eth-value.up {
+    color: lime;
+}
+.eth-value.down {
+    color: red;
+}
+.doge-value.up {
+    color: lime;
+}
+.doge-value.down {
+    color: red;
+}
+.sand-value.up {
+    color: lime;
+}
+.sand-value.down {
+    color: red;
+}
+.gala-value.up {
+    color: lime;
+}
+.gala-value.down {
+    color: red;
+}
+.bnb-value.up {
+    color: lime;
+}
+.bnb-value.down {
+    color: red;
+}
+.btc-name {
+    width: 130px;
+}
+.btc-image {
+    position: absolute;
+    left: 133px;
+    top: 13px;
+}
+.btc-logo {
+    width: 253px;
+}
+.btc-procent {
+    width: 225px;
+}
+.btc-value {
+    width: 175px;
+}
+.btc-graph {
+    height: 3px;
+}
+.btc-percent.up {
+    color: lime;
+}
+.btc-percent.down {
+    color: red;
+}

@@ -1,11 +1,34 @@
-const addBtn = document.querySelector(".plus");
-const displayElement = document.querySelector(".display");
+  const clientElements = {
+    counter: document.querySelector('#client-counter > span'),
+    button: document.querySelector('#client-counter > button')
+  };
 
-addBtn.addEventListener("click", add);
+  const serverElements = {
+      counter: document.querySelector("#server-counter > span"),
+      button: document.querySelector("#server-counter > button")
+  };
+  
+  clientElements.button.addEventListener('click', onClientCounterClicked);
+  serverElements.button.addEventListener("click", onServerCounterClicked);
 
-let counter = 0;
+  let clientCounter = 0;
+  
+  fetch("http://localhost:3000/counter")
+  .then(response => response.json())
+  .then(data => {
+      serverElements.counter.innerText = data.counter;
+  });
 
-function add() {
-    counter++;
-    displayElement.innerHTML = counter;
-};
+  function onClientCounterClicked() {
+    clientCounter++;
+    clientElements.counter.innerHTML = clientCounter;
+  };
+
+  function onServerCounterClicked() {
+    fetch("http://localhost:3000/counter", {
+        method: "post"
+    }).then(response => response.json())
+    .then(data => {
+        serverElements.counter.innerText = data.counter;
+    });
+  };

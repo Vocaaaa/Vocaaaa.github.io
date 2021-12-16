@@ -3,9 +3,32 @@ const bcrypt = require("bcrypt")
 const jwt = require("jsonwebtoken")
 const router = express.Router()
 const User = require("./schema")
+const verifyToken = require("./auth")
+let user;
+
+router.use("/", (req, res, next) => {
+    next()
+})
 
 router.get("/", (req, res) => {
-    res.render("index")
+    const {token} = req.cookies;
+    if(verifyToken(token)) {
+        res.render("home", {
+            user: user
+        })
+    } else {
+        res.render("index")
+    }
+})
+router.get("/home", (req, res) => {
+    const {token} = req.cookies;
+    if(verifyToken(token)) {
+        res.render("home", {
+            user: user
+        })
+    } else {
+        res.render("index")
+    }
 })
 router.get("/signup", (req, res) => {
     res.render("register")
@@ -16,7 +39,7 @@ router.get("/login", (req, res) => {
 router.post("/login", async (req, res) => {
     let email = req.body.l_email
     let password = req.body.l_password
-    const user = await User.findOne({email: email})
+    user = await User.findOne({email: email})
     const comparedPassword = bcrypt.compareSync(password, user.password)
     if(comparedPassword) {
         token = jwt.sign({id: user._id},process.env.JWT, {expiresIn: "60sec"})
@@ -25,9 +48,7 @@ router.post("/login", async (req, res) => {
     } else {
         res.status(401).json({message: "Failed"})
     }
-    res.render("home", {
-        user: user
-    })
+    res.redirect("/")
 })
 router.post("/signup", (req, res) => {
     let {f_name, l_name, password1, password2, email, personID} = req.body

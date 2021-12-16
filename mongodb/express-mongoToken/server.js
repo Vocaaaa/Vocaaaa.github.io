@@ -4,8 +4,10 @@ const server = express();
 const router = require("./config/controller");
 const mongoose = require("mongoose");
 const layout = require("express-ejs-layouts");
+const cookieParser = require("cookie-parser");
 
 // Server settings
+server.use(cookieParser());
 server.use(express.urlencoded({extended:false}));
 server.use(express.json());
 server.use(express.static("public"));
@@ -23,7 +25,7 @@ db.once("open", (err) => {
 });
 
 
-server.listen(4000, (err) => {
+server.listen(3000, (err) => {
     if (err) throw err
     console.log("Connected to web");
 });

@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(images/forza-main-image.jpg);
+    background-repeat: no-repeat;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #fff;
+}
+.header {
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 93px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: animate 1s;
+    font-family: 'Kanit', sans-serif;
+}
+.header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    font-size: 2rem;
+}
+.header-logo {
+    margin-left: 50px;
+}
+.header a {
+    text-decoration: none;
+    color: #fff;
+    padding-left: 30px;
+}
+.header a:hover {
+    color: #fefe;
+}
+.main {
+    width: 100%;
+    height: 100vh;
+}
+.main2 {
+    width: 100%;
+    height: 529vh;
+    background: rgb(10, 10, 10);
+    background-image: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.horizon-adventure-text {
+    position: absolute;
+    top: 1120px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3.5rem;
+}
+.adventure-small-text {
+    position: absolute;
+    top: 1350px;
+    font-size: 1.2rem;
+    width: 950px;
+    text-align: center;
+}
+.trailer-gameplay {
+    position: absolute;
+    top: 1500px;
+
+}
+.video {
+    position: absolute;
+    top: 1590px;
+}
+.gamepass-logo {
+    position: absolute;
+    top: 2250px;
+}
+.ingame-screenshot {
+    position: absolute;
+    top: 4940px;
+    width: 100%;
+}
+.built-for-xbox {
+    position: absolute;
+    width: 150px;
+    left: 400px;
+    top: 2600px;
+}
+.xbox-text {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+    left: 400px;
+    top: 2700px;
+}
+.white-xbox {
+    width: 600px;
+    position: absolute;
+    top: 2500px;
+    left: 900px;
+}
+.fps {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.7rem;
+    left: 400px;
+    position: absolute;
+    top: 2750px;
+}
+.true-4k {
+    font-family: 'Kanit', sans-serif;
+    position: absolute;
+    left: 520px;
+    font-size: 1.7rem;
+    top: 2750px;
+}
+.small-ingame-image {
+    position: absolute;
+    top: 2850px;
+    left: 400px;
+}
+.open-world {
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.7rem;
+    top: 3200px;
+    right: 400px;
+}
+.open-world-text {
+    width: 600px;
+    position: absolute;
+    top: 3270px;
+    right: 120px;
+    font-size: 1.3rem;
+}
+.ingame-image {
+    width: 600px;
+    position: absolute;
+    top: 3210px;
+    left: 500px;
+}
+.explore-mexico-text {
+    font-weight: bold;
+    position: absolute;
+    font-size: 2rem;
+    top: 3700px;
+}
+.explore-mexico-small-text {
+    width: 50%;
+    font-size: 1.3rem;
+    text-align: center;
+    position: absolute;
+    top: 3800px;
+}
+.map-image {
+    width: 75%;
+    height: 800px;
+    position: absolute;
+    top: 3980px;
+}
+.turn10-logo {
+    position: absolute;
+    top: 4770px;
+}
+.info-box {
+    width: 550px;
+    height: 400px;
+    background: black;
+    position: absolute;
+    top: 5200px;
+    left: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.buy-now-text {
+    font-weight: bold;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 20px;
+}
+.game-pass-icon {
+    top: 100px;
+    position: absolute;
+}
+.steam-icon {
+    font-size: 3rem;
+    position: absolute;
+    left: 150px;
+    top: 300px;
+}
+.steam-icon a {
+    text-decoration: none;
+    color: #fff;
+}
+.steam-icon a:hover {
+    color: #9bf00b;
+}
+.microsoft-icon {
+    font-size: 3rem;
+    position: absolute;
+    top: 300px;
+    right: 175px;
+}
+.microsoft-icon a {
+    color: #fff;
+    text-decoration: none;
+}
+.microsoft-icon a:hover {
+    color: #9bf00b;
+}
+.available-gamepass {
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 190px;
+}
+.join-gamepass {
+    text-align: center;
+    position: absolute;
+    top: 230px;
+    left: 230px;
+    font-weight: bold;
+}
+.join-gamepass:hover {
+    text-decoration: underline;
+}
+.arrow {
+    position: absolute;
+    top: 3px;
+    left: 85px;
+    color: #9bf00b;
+}
+.join-gamepass a {
+    color: #9bf00b;
+    text-decoration: none;
+}
+.footer {
+    width: 100%;
+    height: 350px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.xbox-logo {
+    position: absolute;
+    top: 6070px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.microsoft-logo {
+    position: absolute;
+    left: 50%;
+    top: 6150px;
+    transform: translate(-50%, -50%);
+}
+.footer a {
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 270px;
+}
+.footer a:hover {
+    color: #9bf00b;
+}
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}

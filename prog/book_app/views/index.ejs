@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book library</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/x-icon" href="/book.png">
+</head>
+<body>
+    <div class="container">
+        <div class="topbar">
+            <img class="topbar-logo" src="/book.png" alt="">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Update</a></li>
+                <li><a href="/delete.html">Delete a book</a></li>
+            </ul>
+        </div>
+    <form action="/addBook" method="post">
+        <div class="main">
+            <label for="">Book name</label>
+            <input type="text" name="title">
+
+            <label for="">Author</label>
+            <input type="text" name="author">
+
+            <label for="">Pages</label>
+            <input type="number" name="pages">
+
+            <button class="add-book-btn">Add book</button>
+        </div>
+    </form>
+
+    <% books.forEach(book => { %>
+        <div class="books">
+            <h2>Title: <%= book.title %> </h2><br>
+            <h2>Author: <%= book.author %> </h2><br>
+            <h2>Pages: <%= book.pages %> </h2>
+        </div>
+    <% }) %> 
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background: #141414;
+    height: 100vh;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.25;
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+}.container {
+    transition: max-height 500ms ease-in-out;
+}
+.question button {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 50%;
+    background: #303030;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    font-size: 1.25rem;
+    margin-left: 500px;
+    margin-top: 5px;
+    position: relative;
+    transition: transform 500ms ease;
+}
+.question:first-child {
+    margin-top: 200px;
+}
+.question div {
+    padding: 0;
+    width: 50%;
+    background: #303030;
+    margin-top: 5px;
+    font-size: 1.25rem;
+    margin-left: 500px;
+    max-height: 2000px;
+    overflow: hidden;
+
+}
+.question button svg {
+    position: absolute;
+    fill: white;
+    width: 1em;
+    height: 1em;
+    right: 1.5rem;
+    transform: rotate(0deg);
+    pointer-events: none;
+    transition: transform 200ms ease-in-out;
+}
+.question.closed button svg {
+    transform: rotate(45deg);
+}
+.question.closed div {
+    display: block;
+    max-height: 0px;
+    transition: max height .25s cubic-bezier(.5,0,.1,1);
+}
+.rotate {
+    transform: rotate(45deg);
+}

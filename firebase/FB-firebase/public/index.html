@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in system</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="signGoogle">Sign in with <svg xmlns="SVG namespace" class="google-svg">
+
+        <g stroke-width="16" fill="none">
+        
+          <path d="M173 102a51 51 0 1 1-13-30m20 37h-53" stroke="#4a87ee"/>
+        
+          <circle cx="227" cy="128" r="32" stroke="#d83038"/>
+        
+          <circle cx="313" cy="128" r="32" stroke="#f4c022"/>
+        
+          <path d="M401 160a31 31 0 1 1 0-61m-4 0a24 29 0 1 1 0 61m26-67v79m-1-12a20 20 0 1 1-52 17" stroke="#4a87ee"/>
+        
+          <path stroke="#4ab95a" d="M449 51v115"/>
+        
+          <path d="M529 118a30 30 0 1 0-2 24m5-32l-62 28" stroke="#d83038"/>
+        
+        </g>
+        
+        </svg>
+    </button>
+        <form id="register">
+            <input type="text" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <button type="submit">Login</button>
+        </form>
+        <div  hidden class="signedIn">
+        <h1>Welcome</h1>
+        <form id="save" action="">
+            <input type="text" id="text" placeholder="Text">
+            <input type="text" id="heading" placeholder="Heading">
+            <button type="submit">Send</button>
+            <button id="signOut">Sign out</button>
+        </form>
+    </div>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>

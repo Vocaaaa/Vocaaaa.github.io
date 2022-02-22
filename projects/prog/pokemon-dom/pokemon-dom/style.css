@@ -1,0 +1,38 @@
+/*
+  Försök ditt bästa för att styla webbsidan så fin som möjligt.
+*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 170vh;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+}
+.pokemon {
+  background: white;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 42px 10px rgba(0,0,0,0.05);
+  -moz-box-shadow: 0px 0px 42px 10px rgba(0,0,0,0.05);
+  box-shadow: 0px 0px 42px 10px rgba(0,0,0,0.05);
+
+}
+.row {
+  margin-bottom: 10px;
+}
+h1 {
+  margin-left: 540px;
+}

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background: rgb(20, 20, 20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+}
+.faq-container {
+    width: 600px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.question1-container {
+    width: 400px;
+    height: 50px;
+    background: rgb(50, 50, 50);
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-top: -150px;
+}
+.faq1 {
+    margin-left: 20px;
+}
+.down-arrow {
+    position: relative;
+    left: 56px;
+    top: 3px;
+    cursor: pointer;
+}
+.down-arrow:hover {
+    color: gray;
+}
+.answer1-container {
+    width: 400px;
+    height: 150px;
+    color: white;
+    background: rgb(60, 60, 60);
+    display: none;
+}
+.answer1 {
+    position: relative;
+    left: 20px;
+    top: 20px;
+
+}
+.down-arrow2 {
+    position: relative;
+    left: 197px;
+    top: 3px;
+    cursor: pointer;
+    color: white;
+}
+.down-arrow2:hover {
+    color: gray;
+}
+.question2-container {
+    width: 400px;
+    height: 50px;
+    background: rgb(50, 50, 50);
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.faq2 {
+    margin-left: 20px;
+}
+.answer2-container {
+    width: 400px;
+    height: 150px;
+    color: white;
+    background: rgb(60, 60, 60);
+    display: none;
+}
+.answer2 {
+    position: relative;
+    left: 20px;
+    top: 20px;
+
+}
+.block {
+    display: block;
+}
+.rotate {
+    transform: rotate(180deg);
+}
+.remove {
+    display: none;
+}
+.animation {
+    animation: animation 0.5s;
+}
+.retract-animation {
+    animation: retract-animation 500ms ease-in-out;
+}
+
+@keyframes animation {
+    0% {
+        height: 0px;
+    }
+    100% {
+        height: 150px;
+    }
+}
+@keyframes retact-animation {
+    0% {
+        height: 150px;
+    }
+    100% {
+        height: 0px;
+    }
+}

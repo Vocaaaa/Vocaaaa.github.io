@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.covid-container {
+    width: 600px;
+    height: 500px;
+    background: #eee;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 0px 21px 13px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 0px 21px 13px rgba(0,0,0,0.05);
+    box-shadow: 0px 0px 21px 13px rgba(0,0,0,0.05);
+}
+.main-title {
+    font-size: 2.2rem;
+    margin-top: -175px;
+    margin-bottom: 50px;
+}
+.total-cases {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.total-deaths {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to { 
+        transform: rotate(360deg);
+    }
+}
+ @-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to { 
+        -webkit-transform: rotate(360deg);
+    }
+}
+.load {
+	width: 100px;
+	height: 100px;
+	margin: 110px auto 0;
+	border:solid 10px #888;
+	border-radius: 50%;
+    position: absolute;
+    top: 300px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	-webkit-transition: all 0.5s ease-in;
+    -webkit-animation-name: rotate; 
+    -webkit-animation-duration: 1.0s; 
+    -webkit-animation-iteration-count:  infinite;
+    -webkit-animation-timing-function: linear;
+    
+    transition: all 0.5s ease-in;
+    animation-name: rotate; 
+    animation-duration: 1.0s; 
+    animation-iteration-count:  infinite;
+    animation-timing-function: linear; 
+}
